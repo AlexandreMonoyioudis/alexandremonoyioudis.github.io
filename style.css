@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  left: 100px;
 }
 
 /* Style the header */
@@ -17,50 +18,29 @@ header {
   top: 0;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  min-width:70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* Style the footer */
 footer {
   background-color: #777;
   text-align: center;
   color: white;
-  position: fixed;
+  position:fixed;
   bottom: 0;
+  height: 40px;
   min-width:100%;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    min-width: 100%;
-    height: auto;
-  }
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: body; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'menu main'
+    'footer';
+  gap: 5%;
 }
