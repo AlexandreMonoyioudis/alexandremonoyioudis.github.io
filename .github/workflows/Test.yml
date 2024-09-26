@@ -1,0 +1,38 @@
+name: Testing Actions
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # You can test your matrix by printing the current Python version
+      - name: Run tests
+        run: python sample_unit_tests.py
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+      - uses: 'actions/checkout@v4'
+      - name: "Auth GCP"
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: ${{ secrets.GCP_Key }}
+      
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+      - name: 'Test CLI'
+        run: 'gcloud info'
+      - id: 'upload-folder'
+        uses: 'google-github-actions/upload-cloud-storage@v2'
+        with:
+          path: 'www'
+          destination: 'alexandrebucket'
