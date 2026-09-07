@@ -59,6 +59,42 @@ header h1 {
   flex: 1; /* Pushes footer to the bottom organically */
 }
 
+/* Sidebar Container */
+.side {
+  position: sticky;
+  top: 1.5rem;
+  padding: 0; /* Remove manual padding */
+}
+
+/* Sidebar Link Styling (Button Appearance) */
+.side a {
+  display: block; /* Makes the entire button area clickable */
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem; /* Space between buttons */
+  background-color: #ffffff;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover & Active States */
+.side a:hover {
+  background-color: #2563eb; /* Accent color on hover */
+  color: #ffffff;
+  border-color: #2563eb;
+  transform: translateY(-1px); /* Slight lift effect */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.side a:active {
+  transform: translateY(0); /* Press down effect when clicked */
+}
+
 /* Sidebar / Sticky Navigation */
 .side {
   position: sticky;
@@ -76,17 +112,6 @@ header h1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.side a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.side a:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
-}
 
 /* Main Content Styling */
 .main {
