@@ -140,6 +140,36 @@ header h1 {
   color: #334155;
 }
 
+/* --- Mobile Layout Fixes --- */
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem 1rem 2rem;
+  }
+
+  .side {
+    position: static;
+    top: auto;
+    width: 100%;
+  }
+
+  .side nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    position: static;
+  }
+
+  .side a {
+    flex: 1 1 140px;
+    min-width: 0;
+  }
+
+  .main {
+    padding: 1.5rem 1rem;
+  }
+}
+
 /* --- Desktop Layout (Sidebar + Main Content) --- */
 @media (min-width: 768px) {
   .container {
