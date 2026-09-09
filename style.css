@@ -140,6 +140,17 @@ header h1 {
   color: #334155;
 }
 
+.main ul {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem;
+  list-style-position: outside;
+}
+
+.main li {
+  margin-bottom: 0.35rem;
+  color: #334155;
+}
+
 /* --- Mobile Layout Fixes --- */
 @media (max-width: 767px) {
   .container {
@@ -153,16 +164,28 @@ header h1 {
   }
 
   .side nav {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0.35rem 0.1rem 0.5rem;
     position: static;
   }
 
+  .side nav::-webkit-scrollbar {
+    display: none;
+  }
+
   .side a {
-    flex: 1 1 140px;
-    min-width: 0;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
   }
 
   .main {
