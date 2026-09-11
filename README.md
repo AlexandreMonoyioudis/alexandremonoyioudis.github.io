@@ -1,2 +1,2 @@
-# alexandre monoyioudis website
-My persional website containing many of my programming achivements and projects
+# Alexandre Monoyioudis website
+My personal website containing many of my programming achievements and projects.
