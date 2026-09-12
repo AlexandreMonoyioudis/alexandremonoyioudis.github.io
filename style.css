@@ -151,6 +151,64 @@ header h1 {
   color: #334155;
 }
 
+.tank-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.tank-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.tank-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #e2e8f0;
+}
+
+.tank-card-content {
+  padding: 0.9rem;
+}
+
+.tank-card-content h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+  color: #0f172a;
+}
+
+.tank-card-content p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.bomber-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.1fr) minmax(220px, 1.4fr);
+  gap: 1.25rem;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.bomber-video {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+  justify-self: center;
+}
+
+.bomber-text {
+  margin: 0;
+  align-self: center;
+}
+
 /* --- Mobile Layout Fixes --- */
 @media (max-width: 767px) {
   .container {
