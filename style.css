@@ -188,6 +188,48 @@ header h1 {
   font-size: 0.95rem;
 }
 
+.enemy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.enemy-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.enemy-card-wide {
+  grid-column: 1 / -1;
+}
+
+.enemy-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #e2e8f0;
+}
+
+.enemy-card-content {
+  padding: 0.9rem;
+}
+
+.enemy-card-content h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+  color: #0f172a;
+}
+
+.enemy-card-content p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
 .bomber-layout {
   display: grid;
   grid-template-columns: minmax(220px, 1.1fr) minmax(220px, 1.4fr);
