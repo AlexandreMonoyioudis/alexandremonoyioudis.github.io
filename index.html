@@ -22,6 +22,7 @@
       <a href="#overview">Overview</a>
       <a href="#employment-history">Employment History</a>
       <a href="#work-experience">Work Experience</a>
+      <a href="#Shooter-Game">Shooter Game</a>
       <a href="#tank-game">Tank Game</a>
       <a href="#empty-void">Empty Void</a>
       <a href="#programming-project">Programming Project</a>
@@ -70,7 +71,7 @@
       </section>
 
       <h1>Game development</h1>
-      <section id="ShooterGame">
+      <section id="Shooter-Game">
         <h2>Shooter Game</h2>
         <p>This is my most recent game project and will apply all the lessons and skills I have learned in previous projects.</p>
 
@@ -83,12 +84,14 @@
 
         <img src="./Images/ShooterGame/EnemySpawning.jpg" alt="DOTS vs GameObjects performance comparison">
         <p>This is how the more complex enemy spawning system will work with DOTS. First the Monobehaviours create enetities with the spawner data class. Then the Spawner system looks at all the spawner data classes and spawns enemies accordingly using Unity's job system.</p>
-        
+        <h3>Performance Testing</h3>
         <div class="frame-rate-layout">
           <img class="frame-rate-image" src="./Images/ShooterGame/FrameRateTest.png" alt="DOTS test">
-          <p>I wanted to test the performance of the DOTS approach to make sure that the performance gains were significant enough to justify the additional complexity.</p>
-
-          <p>To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned their was only a small performance difference when looking at the enemies who have clumped together. This was likely due to rendering hundreds of meshes at once. If I had not been using DOTS, the performance would have been comparable to a slideshow.</p>
+          <p>
+          I wanted to test the performance of the DOTS approach to make sure that the performance gains were significant enough to justify the additional complexity.
+          <br><br>
+          To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned their was only a small performance difference when looking at the enemies who have clumped together. This was likely due to rendering hundreds of meshes at once. If I had not been using DOTS, the performance would have been comparable to a slideshow.
+        </p>
         </div>
       </section>
 
