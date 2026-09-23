@@ -243,7 +243,8 @@ header h1 {
   font-size: 0.95rem;
 }
 
-.bomber-layout {
+.bomber-layout,
+.frame-rate-layout {
   display: grid;
   grid-template-columns: minmax(220px, 1.1fr) minmax(220px, 1.4fr);
   gap: 1.25rem;
@@ -251,7 +252,8 @@ header h1 {
   margin: 1rem 0 1.5rem;
 }
 
-.bomber-video {
+.bomber-video,
+.frame-rate-image {
   width: 100%;
   max-width: 420px;
   border-radius: 10px;
@@ -259,7 +261,8 @@ header h1 {
   justify-self: center;
 }
 
-.bomber-text {
+.bomber-text,
+.frame-rate-layout p {
   margin: 0;
   align-self: center;
 }
@@ -305,7 +308,8 @@ header h1 {
     padding: 1.5rem 1rem;
   }
 
-  .bomber-layout {
+  .bomber-layout,
+  .frame-rate-layout {
     grid-template-columns: 1fr;
   }
 }

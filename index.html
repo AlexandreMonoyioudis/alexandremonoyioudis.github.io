@@ -11,7 +11,7 @@
 <body>
 
   <header>
-    <h2>Alexandre Monoyioudis (WIP website)</h2>
+    <h2>Alexandre Monoyioudis</h2>
   </header>
 
   <!-- Main Grid Layout Container -->
@@ -84,6 +84,10 @@
         <img src="./Images/ShooterGame/EnemySpawning.jpg" alt="DOTS vs GameObjects performance comparison">
         <p>This is how the more complex enemy spawning system will work with DOTS. First the Monobehaviours create enetities with the spawner data class. Then the Spawner system looks at all the spawner data classes and spawns enemies accordingly using Unity's job system.</p>
         
+        <div class="frame-rate-layout">
+          <img class="frame-rate-image" src="./Images/ShooterGame/FrameRateTest.png" alt="DOTS test">
+          <p>To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned their was only a small performance difference when looking at the enemies who have clumped together.</p>
+        </div>
       </section>
 
       <section id="tank-game">
