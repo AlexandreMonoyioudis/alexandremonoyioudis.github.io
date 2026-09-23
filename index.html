@@ -86,7 +86,9 @@
         
         <div class="frame-rate-layout">
           <img class="frame-rate-image" src="./Images/ShooterGame/FrameRateTest.png" alt="DOTS test">
-          <p>To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned their was only a small performance difference when looking at the enemies who have clumped together.</p>
+          <p>I wanted to test the performance of the DOTS approach to make sure that the performance gains were significant enough to justify the additional complexity.</p>
+
+          <p>To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned their was only a small performance difference when looking at the enemies who have clumped together. This was likely due to rendering hundreds of meshes at once. If I had not been using DOTS, the performance would have been comparable to a slideshow.</p>
         </div>
       </section>
 
