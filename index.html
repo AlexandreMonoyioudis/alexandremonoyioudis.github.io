@@ -35,7 +35,7 @@
         <h2>Personal Statement</h2>
         <p>I am a software developer who will work on challenging, meaningful projects. I am attracted to the fast pace of innovation in technology and how mathematical solutions and coding can solve simple to complex problems in the world. I am eager to gain practical experience in the workplace and expand my skills. I have completed my Google software engineering apprenticeship. This apprenticeship allowed me to learn from leading experts in the industry while working on <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata&hl=en_GB">Health Connect</a> and <a href="https://developer.android.com/health-and-fitness/health-connect/test/health-connect-toolbox">Health Connect Toolbox</a> (Health Connect's developer toolbox). During my apprenticeship, I worked on a Higher National Diploma hosted by <a href="https://makers.tech/learn/apprenticeships">Makers</a> alongside my Google projects, receiving a merit. In my apprenticeship, I showed a high level of adaptability when learning new technologies.</p>
       
-        <p>I have also made a large number of games as a hobby. These projects have helped me develop my programming skills, creativity while also challenging me on a technical level while learning programming concepts such as data oriented design, optimization, debugging, 3d modeling, animation, rendering, baking lights and many more skills.</p>
+        <p>I have also made a large number of games as a hobby. These projects have helped me develop my programming skills and creativity, while also challenging me on a technical level and helping me learn programming concepts such as data-oriented design, optimisation, debugging, 3D modelling, animation, rendering, light baking and many more skills.</p>
       </section>
 
       <section id="employment-history">
@@ -46,9 +46,9 @@
         <ul>
           <li>Selected as one of 14 apprentices from 2,500+ applicants. Commenced the apprenticeship by completing a rigorous 12-week <a href="https://makers.tech/learn/apprenticeships">Makers</a> software development bootcamp covering applications, SQL databases, version control, workflows and Google's CI/CD pipeline.</li>
           <li>Engineered data aggregation features for the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata&hl=en_GB">Health Connect</a> core application, improving user experience by displaying relevant information that's dynamic with the page.</li>
-          <li>Improved testing, and implemented backend testing optimizations such as making preexisting code asynchronous, cutting 3 seconds on a test that is used across android health and fitness.</li>
+          <li>Improved testing and implemented backend testing optimisations, such as making pre-existing code asynchronous, cutting 3 seconds from a test that is used across Android Health and Fitness.</li>
           <li>Authored technical design documents to guide the enhancement of the <a href="https://developer.android.com/health-and-fitness/health-connect/test/health-connect-toolbox">HealthConnectToolbox</a>, successfully designing a new flag menu and refining the permissions interface using <a href="https://developer.android.com/compose">Jetpack Compose</a> to aid developers across all Health Connect teams and QA teams by reducing test environment setup time by reducing several long commands to a few button presses.</li>
-          <li>Navigated large industry codebases, maintaining strict enterprise-level code quality and creating comprehensive quality assurance testing documentation using bleeding edge AI tools to aid work.</li>
+          <li>Navigated large industry codebases, maintaining strict enterprise-level code quality and creating comprehensive quality assurance testing documentation using bleeding-edge AI tools to aid my work.</li>
         </ul>
       </section>
 
@@ -65,8 +65,8 @@
         <h3>Programmer Work Experience, <a href="https://sabin.io/">Sabin.io</a></h3>
         <p class="experience-date"><strong>27th September 2021 – 1st October 2021</strong></p>
         <ul>
-          <li>Backend Web Development - Collaborated within a team to process and analyze SQL databases that were over 100 pages long, leveraging Python and pandas for data manipulation to enable smooth loading and clear website.</li>
-          <li>Developed and deployed a web application using Python and HTML to visualize the processed data, while honing full-stack development skills and team collaboration.</li>
+          <li>Backend Web Development - Collaborated within a team to process and analyse SQL databases that were over 100 pages long, leveraging Python and pandas for data manipulation to enable smooth loading and a clear website.</li>
+          <li>Developed and deployed a web application using Python and HTML to visualise the processed data, while honing full-stack development skills and team collaboration.</li>
         </ul>
       </section>
 
@@ -78,21 +78,23 @@
         <p>In this project I will want to be able to have around a hundred if not several hundred units on screen at once, in <a href="#programming-project">Programming Project</a> my game would slow down at around 30 units. This means I would need to change my approach and implement more efficient techniques.</p>
         
         <img src="./Images/ShooterGame/DOTS-vs-GameObjects.jpg" alt="DOTS vs GameObjects performance comparison">
-        <p>I plan to be using Unity DOTS (Data Oriented Technology Stack). DOTS is a form of Data-Oriented Design (DoD).This shifts the focus from managing heavy "Objects" scattered in memory to managing tightly packed batches of raw "Data" at the cost of being significantly more complex and time consuming to implement. The end result is a massive performance boost (often 10x to 100x faster processing), allowing games to handle tens of thousands of active elements on screen at once without dropping frame rates. This performance boost is only applicable with larger numbers of entities which just happens to be exactly what I need for this project.</p>
+        <p>I plan to use Unity DOTS (Data-Oriented Technology Stack). DOTS is a form of Data-Oriented Design (DoD). This shifts the focus from managing heavy "Objects" scattered in memory to managing tightly packed batches of raw "Data" at the cost of being significantly more complex and time-consuming to implement. The end result is a massive performance boost (often 10x to 100x faster processing), allowing games to handle tens of thousands of active elements on screen at once without dropping frame rates. This performance boost is only applicable with larger numbers of entities, which happens to be exactly what I need for this project.</p>
         
-        <p>In this project I will be using Unity's Entity Component System (ECS) which is a framework for building high-performance, data-oriented applications. ECS is a core part of Unity's DOTS architecture and allows developers to create complex systems that can handle large amounts of data efficiently. ECS is based on the principles of composition over inheritance, which means that instead of creating complex class hierarchies, developers can create simple components that can be combined to create more complex behaviors.</p>
+        <p>In this project I will be using Unity's Entity Component System (ECS), which is a framework for building high-performance, data-oriented applications. ECS is a core part of Unity's DOTS architecture and allows developers to create complex systems that can handle large amounts of data efficiently. ECS is based on the principles of composition over inheritance, which means that instead of creating complex class hierarchies, developers can create simple components that can be combined to create more complex behaviours.</p>
 
         <img src="./Images/ShooterGame/EnemySpawning.jpg" alt="DOTS vs GameObjects performance comparison">
-        <p>This is how the more complex enemy spawning system will work with DOTS. First the Monobehaviours create enetities with the spawner data class. Then the Spawner system looks at all the spawner data classes and spawns enemies accordingly using Unity's job system.</p>
+        <p>This is how the more complex enemy spawning system will work with DOTS. First, the MonoBehaviours create entities with the spawner data class. Then the Spawner system looks at all the spawner data classes and spawns enemies accordingly using Unity's job system.</p>
         <h3>Performance Testing</h3>
         <div class="frame-rate-layout">
           <img class="frame-rate-image" src="./Images/ShooterGame/FrameRateTest.png" alt="DOTS test">
           <p>
           I wanted to test the performance of the DOTS approach to make sure that the performance gains were significant enough to justify the additional complexity.
           <br><br>
-          To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned their was only a small performance difference when looking at the enemies who have clumped together. This was likely due to rendering hundreds of meshes at once. If I had not been using DOTS, the performance would have been comparable to a slideshow.
+          To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned, there was only a small performance difference when looking at the enemies that had clumped together. This was likely due to rendering hundreds of meshes at once. If I had not been using DOTS, the performance would have been comparable to a slideshow.
         </p>
         </div>
+
+        
       </section>
 
       <section id="tank-game">
@@ -199,7 +201,7 @@
             </video>
             <div class="enemy-card-content">
               <h4>Drone</h4>
-              <p>The drone attack constantly and tries to circle the player, forcing them to keep moving. Their variety of heights and ranges provide dynamic targets for the player to hit.</p>
+              <p>The drone attacks constantly and tries to circle the player, forcing them to keep moving. Its variety of heights and ranges provides dynamic targets for the player to hit.</p>
             </div>
           </article>
 
@@ -210,7 +212,7 @@
             </video>
             <div class="enemy-card-content">
               <h4>Harvester</h4>
-              <p>The Harvester is a fast close range threat that charges at the player with its rotating blades. It adds pressure forcing the player to move and not get cornered.</p>
+              <p>The Harvester is a fast, close-range threat that charges at the player with its rotating blades. It adds pressure, forcing the player to move and avoid getting cornered.</p>
             </div>
           </article>
 
@@ -221,7 +223,7 @@
             </video>
             <div class="enemy-card-content">
               <h4>Large drone</h4>
-              <p>The large is increadibly durable and shoots an overwhelming number of projectiles, forcing the player to avoid it and use range and play around them.</p>
+              <p>The large drone is incredibly durable and shoots an overwhelming number of projectiles, forcing the player to avoid it and use range and play around it.</p>
             </div>
           </article>
 
@@ -232,7 +234,7 @@
             </video>
             <div class="enemy-card-content">
               <h4>Gate Miniboss</h4>
-              <p>This enemy continously summons in large drones endlessly and shoots projectiles from its eyes. The player must prioritize targets and the summons it before it spawns in too many drones to handle, while also chipping away at the doors health.</p>
+              <p>This enemy continuously summons large drones endlessly and shoots projectiles from its eyes. The player must prioritise targets and destroy the summons before it spawns too many drones to handle, while also chipping away at the door's health.</p>
             </div>
           </article>
 
