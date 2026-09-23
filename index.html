@@ -34,7 +34,7 @@
         <h2>Personal Statement</h2>
         <p>I am a software developer who will work on challenging, meaningful projects. I am attracted to the fast pace of innovation in technology and how mathematical solutions and coding can solve simple to complex problems in the world. I am eager to gain practical experience in the workplace and expand my skills. I have completed my Google software engineering apprenticeship. This apprenticeship allowed me to learn from leading experts in the industry while working on <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata&hl=en_GB">Health Connect</a> and <a href="https://developer.android.com/health-and-fitness/health-connect/test/health-connect-toolbox">Health Connect Toolbox</a> (Health Connect's developer toolbox). During my apprenticeship, I worked on a Higher National Diploma hosted by <a href="https://makers.tech/learn/apprenticeships">Makers</a> alongside my Google projects, receiving a merit. In my apprenticeship, I showed a high level of adaptability when learning new technologies.</p>
       
-        <p>I have also made a large number of games as a hobby. These projects have helped me develop my programming skills, creativity while also challenging me on a technical level.</p>
+        <p>I have also made a large number of games as a hobby. These projects have helped me develop my programming skills, creativity while also challenging me on a technical level while learning programming concepts such as data oriented design, optimization, debugging, 3d modeling, animation, rendering, baking lights and many more skills.</p>
       </section>
 
       <section id="employment-history">
@@ -70,6 +70,22 @@
       </section>
 
       <h1>Game development</h1>
+      <section id="ShooterGame">
+        <h2>Shooter Game</h2>
+        <p>This is my most recent game project and will apply all the lessons and skills I have learned in previous projects.</p>
+
+        <p>In this project I will want to be able to have around a hundred if not several hundred units on screen at once, in <a href="#programming-project">Programming Project</a> my game would slow down at around 30 units. This means I would need to change my approach and implement more efficient techniques.</p>
+        
+        <img src="./Images/ShooterGame/DOTS-vs-GameObjects.jpg" alt="DOTS vs GameObjects performance comparison">
+        <p>I plan to be using Unity DOTS (Data Oriented Technology Stack). DOTS is a form of Data-Oriented Design (DoD).This shifts the focus from managing heavy "Objects" scattered in memory to managing tightly packed batches of raw "Data" at the cost of being significantly more complex and time consuming to implement. The end result is a massive performance boost (often 10x to 100x faster processing), allowing games to handle tens of thousands of active elements on screen at once without dropping frame rates. This performance boost is only applicable with larger numbers of entities which just happens to be exactly what I need for this project.</p>
+        
+        <p>In this project I will be using Unity's Entity Component System (ECS) which is a framework for building high-performance, data-oriented applications. ECS is a core part of Unity's DOTS architecture and allows developers to create complex systems that can handle large amounts of data efficiently. ECS is based on the principles of composition over inheritance, which means that instead of creating complex class hierarchies, developers can create simple components that can be combined to create more complex behaviors.</p>
+
+        <img src="./Images/ShooterGame/EnemySpawning.jpg" alt="DOTS vs GameObjects performance comparison">
+        <p>This is how the more complex enemy spawning system will work with DOTS. First the Monobehaviours create enetities with the spawner data class. Then the Spawner system looks at all the spawner data classes and spawns enemies accordingly using Unity's job system.</p>
+        
+      </section>
+
       <section id="tank-game">
         <h2>Tank Game</h2>
 
