@@ -93,6 +93,10 @@
           To test this, I created a simple square enemy that moves towards the player. I made my spawner create an enemy every second and let it run for a few minutes. When I returned, there was only a small performance difference when looking at the enemies that had clumped together. This was likely due to rendering hundreds of meshes at once. If I had not been using DOTS, the performance would have been comparable to a slideshow.
         </p>
         </div>
+        <h3>Object Pooling</h3>
+        <p>In this project, I will be using object pooling to improve performance. Object pooling is a design pattern that allows for the reuse of objects instead of creating and destroying them repeatedly. This can significantly reduce the overhead of memory allocation and garbage collection, leading to improved performance, especially in scenarios where many objects are created and destroyed frequently, such as in a game with many enemies or projectiles.</p>
+        <img src="./Images/ShooterGame/ObjectPooling.jpg" alt="Pooling">
+        <p>I will be using object pooling on enemies and projectiles. When the player shoots their weapon, both a bullet mark and a smoke VFX are left behind. These can be reused instead of being created and destroyed each time. This means that the without pooling the Unity's garbage collector would be under significant strain having to constantly allocate and deallocate memory. Enemies will also be pooled to reduce the overhead of creating and destroying them as their will also be many enemies.</p>
 
         
       </section>
