@@ -85,8 +85,8 @@
         <img src="./Images/ShooterGame/EnemySpawning.jpg" alt="DOTS vs GameObjects performance comparison">
         <p>This is how the more complex enemy spawning system will work with DOTS. First, the MonoBehaviours create entities with the spawner data class. Then the Spawner system looks at all the spawner data classes and spawns enemies accordingly using Unity's job system.</p>
         <h3>Performance Testing</h3>
-        <div class="frame-rate-layout">
-          <img class="frame-rate-image" src="./Images/ShooterGame/FrameRateTest.png" alt="DOTS test">
+        <div class="media-text-layout">
+          <img class="media-text-media" src="./Images/ShooterGame/FrameRateTest.png" alt="DOTS test">
           <p>
           I wanted to test the performance of the DOTS approach to make sure that the performance gains were significant enough to justify the additional complexity.
           <br><br>
@@ -107,6 +107,8 @@
         <img src="./Images/TankGame/Base.png" alt="The base being attacked by enemies in the game">
         <p>A mobile top-down strategy game that I am developing. In the game, you defend a central point from waves of enemies. You can use a wide variety of tanks to defend yourself and air strikes to support you against growing waves of enemies. This forces the player to make tactical decisions and difficult choices to survive the battles. The player starts in an easy mode that starts slowly and gradually builds up the number and difficulty of enemies. This game contains an upgrade menu where the player can buy new tanks and upgrade current ones. When both additional tanks are bought, the option for medium mode unlocks. This mode increases enemy variety and difficulty but gives the player more money in return.</p>
        
+        <h3>Gameplay</h3>
+        <iframe class="gameplay-video" src="https://www.youtube.com/embed/hdcdULK8NWM?si=6YHWUDaL8oynm2I6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h3>Tanks</h3>
 
         <p>In the game, there are five different types of tanks, each with their own strengths and weaknesses. The player can use these tanks to defend against waves of enemies. The player can also use air strikes to support them in battle. The player starts with a limited amount of money and must earn more beating the round. The player can use this money to buy tank cards. The player can also unlock new tanks or upgrade existing ones.</p>
@@ -162,13 +164,13 @@
         </div>
 
         <h3>Bombers and Artillery</h3>
-        <div class="bomber-layout">
-          <video class="bomber-video" autoplay loop muted playsinline>
+        <div class="media-text-layout">
+          <video class="media-text-media" autoplay loop muted playsinline>
             <source src="./Images/TankGame/Bomber.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
 
-          <div class="bomber-text">
+          <div class="media-text-content">
             <p>In the game, the player has access to three artillery strikes, or bombs. These can be used to devastating effect. A meter fills up, and once it completes, a card is placed in your hand.</p>
             
             <p>This gif shows the bomber in action: a heavy bomber drops a payload on a large swarm of tanks and snipers. Only a few on the edge of the explosion survived.</p>
@@ -183,6 +185,9 @@
         <img src="./Images/EmptyVoid/GooglePlay.png" alt="Google Play Store listing for Empty Void">
         
         <p>In addition to this, I rolled out a few updates, fixing bugs and adding new features. This helped me practice creating working releases without bugs. It may take days to deploy to the Play Store, so each release must be well tested and bug-free to prevent me from rolling back changes or having my app down. Eventually, I decided to remove it from the Play Store, as keeping up with all the security version updates I had to do due to Unity was too much effort.</p>
+        <h3>Gameplay</h3>
+        <iframe class="gameplay-video" src="https://www.youtube.com/embed/EqXzXg56oEI?si=qoiMTb9MKJmrHL1t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
       </section>
 
       <section id="programming-project">
@@ -194,6 +199,9 @@
           <li>The third and final level is the culmination of all my work, with additional enemies, large and complex arenas, multiple continuous waves of enemies, and a final boss fight that incorporates many different attacks and tests the player's skill.</li>
         </ul>
 
+        <h3>Gameplay</h3>
+        <iframe class="gameplay-video" src="https://www.youtube.com/embed/oIKpbMqcicA?si=dqmOGGPjs2k24JWL&amp;start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <h3 id="project-enemies">Enemies</h3>
         <p>Each enemy has a different movement pattern or attack style, giving every level its own challenges.</p>
 
@@ -272,8 +280,13 @@
 
       <section id="pi-hole">
         <h1>Raspberry Pi projects</h1>
-        <p>I have focused on researching topics in single-board computers and other open-source technologies, such as Pi-hole, which acts as a DNS sinkhole that allows me to control all the requests that go through my local network and block advertisements and malware.</p>
-      </section>
+        <p>I have focused on researching topics in single-board computers and other open-source technologies, such as <a href="https://pi-hole.net/" target="_blank" rel="noopener">Pi-hole</a>, which acts as a DNS sinkhole that allows me to control all the requests that go through my local network and block advertisements and malware.</p>
+      
+        <div class="media-text-layout">
+        <img class="media-text-media" src="./Images/RasberryPi/PiHoleImage.jpg" alt="Pi-hole dashboard showing blocked requests">
+        <p>When implementing it, I noticed the temperature on the dashboard was higher than expected. First I removed the plastic case to improve ventilation, noticing only a slight improvement I bought a heatsink that you can see in the image above.</p>
+      </div>
+      </section>  
     </main>
 
   </div>

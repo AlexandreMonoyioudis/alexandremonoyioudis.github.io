@@ -243,8 +243,15 @@ header h1 {
   font-size: 0.95rem;
 }
 
-.bomber-layout,
-.frame-rate-layout {
+.gameplay-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.media-text-layout {
   display: grid;
   grid-template-columns: minmax(220px, 1.1fr) minmax(220px, 1.4fr);
   gap: 1.25rem;
@@ -252,8 +259,7 @@ header h1 {
   margin: 1rem 0 1.5rem;
 }
 
-.bomber-video,
-.frame-rate-image {
+.media-text-media {
   width: 100%;
   max-width: 420px;
   border-radius: 10px;
@@ -261,8 +267,8 @@ header h1 {
   justify-self: center;
 }
 
-.bomber-text,
-.frame-rate-layout p {
+.media-text-content,
+.media-text-layout p {
   margin: 0;
   align-self: center;
 }
@@ -308,8 +314,7 @@ header h1 {
     padding: 1.5rem 1rem;
   }
 
-  .bomber-layout,
-  .frame-rate-layout {
+  .media-text-layout {
     grid-template-columns: 1fr;
   }
 }
